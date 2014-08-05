@@ -6,7 +6,9 @@
 
 package pl.altkom.bookstore.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -22,10 +24,22 @@ public class Invoice {
      * Invoice date
      */
     private Date invoiceDate;
-    //obiekt pracownika
-
-    //obiekt produktów na fakturze
-    //obiekt kontrahenta    
+    
+    /**
+     * Worker information
+     */
+    private Person worker;
+    
+    /**
+     * Client information 
+     */
+    private Person client;
+    
+    /**
+     * List of ordered products
+     */
+    private List<DocItem> orderedProducts = new ArrayList<>();
+    
     public int getInvoceId() {
         return invoceId;
     }

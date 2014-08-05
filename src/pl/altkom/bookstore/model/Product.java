@@ -15,15 +15,14 @@ public class Product {
     public Product() {
     }
 
-    public Product(int productId, String productName, double productPrice, double productVat, String productUnit) {
+    public Product(int productId, String productName, double productPrice, 
+                   double productVat, String productUnit) {
         this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
         this.productVat = productVat;
         this.productUnit = productUnit;
     }
-    
-    
     
     /**
      * Product unique ID
