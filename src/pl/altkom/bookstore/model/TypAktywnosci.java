@@ -10,6 +10,6 @@ package pl.altkom.bookstore.model;
  *
  * @author Jan Nowak <jan at nowak.org>
  */
-public class Aktywnosc {
-    public enum typAktywnosci {SALE, RECLAMATION, EXCHANGE, INFORMATION}
-}
+
+public enum TypAktywnosci {PHONE, EMAIL, PERSONALlY}
+

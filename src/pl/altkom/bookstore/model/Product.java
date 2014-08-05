@@ -46,6 +46,19 @@ public class Product {
      * Vat value 
      */
     private double productVat;
+    
+    /**
+     * Unit metrics
+     */
+    private String productUnit;
+
+    public String getProductUnit() {
+        return productUnit;
+    }
+
+    public void setProductUnit(String productUnit) {
+        this.productUnit = productUnit;
+    }
 
     public int getProductId() {
         return productId;
