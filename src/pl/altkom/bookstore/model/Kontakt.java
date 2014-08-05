@@ -16,7 +16,7 @@ public class Kontakt {
     
     public String email;
     
-    public Adress adres;
+    public DeliveryAddress adres;
     
     public TypKontaktu preferowanyKontakt;
     
