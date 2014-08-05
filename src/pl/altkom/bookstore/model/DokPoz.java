@@ -14,7 +14,6 @@ public class DokPoz {
     
     //Towar - Index (nazwa, opis, jednostka, stawka VAT)
     public Product productName;
-    
     private String adnotacje;
     private double iloscZam;
     //Towar - jednostka
@@ -23,17 +22,19 @@ public class DokPoz {
     private double cenaBrutto;
     //Towar - stawka VAT
     public Product productVat;
-    
     private double wartoscVAT;
     private double rabat;
     private String dataDostawy;
     
     
-    public void setDokPoz(String adnotacje, double iloscZam, double cenaNetto, double cenaBrutto, double wartoscVAT, double rabat, String dataDostawy) {
+    public void setDokPoz(Product productName, String adnotacje, double iloscZam,Product productUnit, double cenaNetto, double cenaBrutto, Product productVat, double wartoscVAT, double rabat, String dataDostawy) {
+        this.productName = productName;
         this.adnotacje = adnotacje;
         this.iloscZam = iloscZam;
+        this.productUnit = productUnit;
         this.cenaNetto = cenaNetto;
         this.cenaBrutto = cenaBrutto;
+        this.productVat = productVat;
         this.wartoscVAT = wartoscVAT;
         this.rabat = rabat;
         this.dataDostawy = dataDostawy;
