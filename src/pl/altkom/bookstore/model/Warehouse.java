@@ -29,6 +29,22 @@ public class Warehouse {
      */
     private Kontakt contactPerson;
 
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public void setContactPerson(Kontakt contactPerson) {
+        this.contactPerson = contactPerson;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Kontakt getContactPerson() {
+        return contactPerson;
+    }
+
     public void setNumberWarehouse(int numberWarehouse) {
         this.numberWarehouse = numberWarehouse;
     }
@@ -44,5 +60,5 @@ public class Warehouse {
     public double getNumber() {
         return number;
     }
-
+ 
 }
