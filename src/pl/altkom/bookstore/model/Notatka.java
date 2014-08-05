@@ -11,5 +11,11 @@ package pl.altkom.bookstore.model;
  * @author Marcin Kępa <your.name at your.org>
  */
 public class Notatka {
-    
+   /* notatka z kontaktu z klientem
+    *
+    * tytuł
+    * data notatki
+    * treść
+    * kto sporządził
+    */
 }
