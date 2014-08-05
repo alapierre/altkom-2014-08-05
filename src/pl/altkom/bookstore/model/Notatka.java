@@ -9,24 +9,21 @@ package pl.altkom.bookstore.model;
 import java.util.Date;
 
 /**
- *
+ * Notatka z aktywności / spotkania z klientem
+ * 
  * @author Marcin Kępa <your.name at your.org>
  */
 public class Notatka {
-   /* notatka z kontaktu z klientem
-    *
-    * tytuł
-    * data notatki
-    * treść
-    * kto sporządził
-    */
-    public String tytul;
+   
+    private String tytul;
     
-    public Date data;
+    private Date data;
     
-    public String trescNotatki;
+    private String trescNotatki;
     
-    public String autorNotatki;
+    private Person autorNotatki;
+    
+    private Client client;
 
     public String getTytul() {
         return tytul;
@@ -52,14 +49,21 @@ public class Notatka {
         this.trescNotatki = trescNotatki;
     }
 
-    public String getAutorNotatki() {
+    public Person getAutorNotatki() {
         return autorNotatki;
     }
 
-    public void setAutorNotatki(String autorNotatki) {
+    public void setAutorNotatki(Person autorNotatki) {
         this.autorNotatki = autorNotatki;
     }
-    
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
     
     
 }

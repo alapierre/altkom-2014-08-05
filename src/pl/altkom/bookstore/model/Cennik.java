@@ -6,16 +6,49 @@
 
 package pl.altkom.bookstore.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author Marcin Kępa <your.name at your.org>
  */
 public class Cennik {
-    /*
-    * produkt
-    * cena netto
-    */
     
-    public Product produkt;
+    private String name;
+    
+    private Client client;
+    
+    public Map<Product, CennikItem> elements = new HashMap<>();
+
+    public void addOrReplace(Product product, double price) {
+        
+        CennikItem tmp = elements.get(product);
+        
+        if(tmp == null) {
+            elements.put(product, new CennikItem(product, price));
+        } else {
+            tmp.setPrice(price);
+        }
+        
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
  
+    
+    
 }
