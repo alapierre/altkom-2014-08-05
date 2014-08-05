@@ -11,5 +11,8 @@ package pl.altkom.bookstore.model;
  * @author Marcin Kępa <your.name at your.org>
  */
 public class Cennik {
-    
+    /*
+    * produkt
+    * cena netto
+    */
 }
