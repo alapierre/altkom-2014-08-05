@@ -11,13 +11,8 @@ package pl.altkom.bookstore.model;
  * @author Jan Nowak <jan at nowak.org>
  */
 public class Typ {
-    public String typKontaktu;
+   
     public String [] type = {"sale", "exchange", "reclamation", "note", "information"};
     
-    /**
-     * 
-     */
-    public void setTypKontaktu(){
-        
-    }
+    
 }
