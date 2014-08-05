@@ -8,13 +8,12 @@ package pl.altkom.bookstore.model;
 
 import java.util.Date;
 
-/**
- *
+/*
  * @author rmi
  */
 public class DocItem {
     
-    //Towar - Index (nazwa, opis, jednostka, stawka VAT)
+    //Product - (nazwa, opis, jednostka, stawka VAT)
     private Product product;
     private String adnotacje;
     private double iloscZam;
