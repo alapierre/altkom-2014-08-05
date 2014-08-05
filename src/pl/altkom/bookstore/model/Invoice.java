@@ -13,7 +13,14 @@ import java.util.Date;
  * @author Piotr Wajcowicz
  */
 public class Invoice {
+    /**
+     * Invoice number
+     */
     private int invoceId;
+    
+    /**
+     * Invoice date
+     */
     private Date invoiceDate;
     //obiekt pracownika
 

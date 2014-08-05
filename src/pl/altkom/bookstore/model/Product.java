@@ -12,12 +12,39 @@ package pl.altkom.bookstore.model;
  */
 public class Product {
     
+    /**
+     * Product unique ID
+     */
     private int productId;
+    
+    /**
+     * Name of product
+     */
     private String productName;
+    
+    /**
+     * Product price
+     */
     private double productPrice;
+    
+    /**
+     * Discount number
+     */
     private double discount;
+    
+    /**
+     * How many of this product are available
+     */
     private int productCount;
+    
+    /**
+     * Name of the manufacturer
+     */
     private String productManufacturer;
+    
+    /**
+     * Vat value 
+     */
     private double productVat;
 
     public int getProductId() {

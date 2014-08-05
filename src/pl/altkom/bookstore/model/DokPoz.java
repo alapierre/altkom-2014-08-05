@@ -11,18 +11,17 @@ package pl.altkom.bookstore.model;
  * @author rmi
  */
 public class DokPoz {
-    //Towar - Index (nazwa, opis, jednostka, stawka VAT)
     
-    //Towar - Nazwa, Opis
-    public String adnotacje;
-    public double iloscZam;
+    //Towar - Index (nazwa, opis, jednostka, stawka VAT)
+    private String adnotacje;
+    private double iloscZam;
     //Towar - jednostka
-    public double cenaNetto;
-    public double cenaBrutto;
+    private double cenaNetto;
+    private double cenaBrutto;
     //Towar - stawka VAT
-    public double wartoscVAT;
-    public double rabat;
-    public String dataDostawy;
+    private double wartoscVAT;
+    private double rabat;
+    private String dataDostawy;
     
     
     public void setDokPoz(String adnotacje, double iloscZam, double cenaNetto, double cenaBrutto, double wartoscVAT, double rabat, String dataDostawy) {
