@@ -55,4 +55,30 @@ public class Invoice {
     public void setInvoiceDate(Date invoiceDate) {
         this.invoiceDate = invoiceDate;
     }
+
+    public Person getWorker() {
+        return worker;
+    }
+
+    public void setWorker(Person worker) {
+        this.worker = worker;
+    }
+
+    public Person getClient() {
+        return client;
+    }
+
+    public void setClient(Person client) {
+        this.client = client;
+    }
+
+    public List<DocItem> getOrderedProducts() {
+        return orderedProducts;
+    }
+
+    public void setOrderedProducts(List<DocItem> orderedProducts) {
+        this.orderedProducts = orderedProducts;
+    }
+    
+    
 }
