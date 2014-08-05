@@ -25,7 +25,7 @@ public class Invoice {
     //obiekt pracownika
 
     //obiekt produktów na fakturze
-    //obiekt kontrahenta
+    //obiekt kontrahenta    
     public int getInvoceId() {
         return invoceId;
     }
