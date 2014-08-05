@@ -7,10 +7,30 @@
 package pl.altkom.bookstore.model;
 
 /**
- * Client VO
+ * Describes Client
  * 
  * @author Radek Kozak
  */
-public class Client {
-    public ClientType type;
+public abstract class Client {
+    
+    private ClientType type;
+
+    public ClientType getType() {
+        return type;
+    }
+
+    public void setType(ClientType type) {
+        this.type = type;
+    }
+    
+    /**
+     * 
+     * All info required for generating invoice
+     * 
+     * @see pl.altkom.bookstore.model.InvoiceInfo
+     * 
+     * @return InvoiceInfo
+     */
+    public abstract InvoiceInfo getInvoiceInfo();
+    
 }
