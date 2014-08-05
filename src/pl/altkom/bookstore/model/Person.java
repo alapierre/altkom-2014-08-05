@@ -18,6 +18,6 @@ public class Person {
     String lastName;
     int peselNumber;
     Date dateOfBirth;
-    Contact contact;
-    Address address;
+    Kontakt contact;
+    DeliveryAddress address;
 }

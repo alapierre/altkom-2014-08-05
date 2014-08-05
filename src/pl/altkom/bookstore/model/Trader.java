@@ -12,5 +12,5 @@ package pl.altkom.bookstore.model;
  * @author Radek Kozak
  */
 public class Trader extends Person {
-    JobPosition position;
+     
 }
