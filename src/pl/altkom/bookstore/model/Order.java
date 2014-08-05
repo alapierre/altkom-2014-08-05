@@ -22,7 +22,11 @@ public class Order {
      * An order status
      */
     private enum orderStatus { REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE };
-    //obiekt zamowionych produktów
+    
+    /**
+     * List of ordered products
+     */
+    private Product[] orderedProducts;
     
     /**
      * Full delivery address
