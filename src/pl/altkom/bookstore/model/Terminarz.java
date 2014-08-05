@@ -1,3 +1,5 @@
+package pl.altkom.bookstore.model;
+
 
 import java.util.Date;
 
@@ -13,6 +15,7 @@ import java.util.Date;
  */
 public class Terminarz {
     public Date data; 
+    
     private void setTermin (int Y, int m, int d, int h, int i)
     {
         data = new Date (Y, m, d, h, i);
