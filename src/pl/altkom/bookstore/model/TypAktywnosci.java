@@ -11,5 +11,5 @@ package pl.altkom.bookstore.model;
  * @author Jan Nowak <jan at nowak.org>
  */
 
-public enum TypAktywnosci {PHONE, EMAIL, PERSONALlY}
+public enum TypAktywnosci {PHONE, EMAIL, PERSONALLY}
 
