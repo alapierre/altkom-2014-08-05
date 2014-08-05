@@ -5,7 +5,6 @@
  */
 package pl.altkom.bookstore.model;
 
-import java.sql.Time;
 import java.time.Clock;
 import java.time.Period;
 

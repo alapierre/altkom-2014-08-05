@@ -15,20 +15,22 @@ import java.util.List;
 public class Order {
 
     /**
-     * An order status
-     */
-    public enum OrderStatus {
-
-        REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE
-    };
-
-    /**
      * Order number
      */
     private int orderId;
     //obiekt kontrahenta
 
     private OrderStatus status;
+
+    /**
+     * List of ordered products
+     */
+    private List<DocItem> orderedProducts = new ArrayList<>();
+
+    /**
+     * Full delivery address
+     */
+    private String deliveryAddress;
 
     public OrderStatus getStatus() {
         return status;
@@ -41,16 +43,6 @@ public class Order {
     public void addProduct(Product product, int volume) {
 
     }
-
-    /**
-     * List of ordered products
-     */
-    private List<DocItem> orderedProducts = new ArrayList<>();
-
-    /**
-     * Full delivery address
-     */
-    private String deliveryAddress;
 
     public int getOrderId() {
         return orderId;
@@ -66,6 +58,14 @@ public class Order {
 
     public void setDeliveryAddress(String deliveryAddress) {
         this.deliveryAddress = deliveryAddress;
+    }
+
+    /**
+     * An order status
+     */
+    public enum OrderStatus {
+
+        REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE
     }
 
 }
