@@ -15,9 +15,21 @@ import java.util.Date;
  */
 public class Terminarz {
     public Date data; 
+
+    /**
+     * 
+     * osoba pracownik
+     * osoba klient
+     */
     
-    private void setTermin (int Y, int m, int d, int h, int i)
+    
+    private void setTermin (Date data)
     {
-        data = new Date (Y, m, d, h, i);
+        this.data = data;
     }
+
+    public Date getData() {
+        return data;
+    }
+    
 }

@@ -10,13 +10,6 @@ package pl.altkom.bookstore.model;
  *
  * @author Jan Nowak <jan at nowak.org>
  */
-public class Typ {
-    public String typKontaktu;
-    
-    /**
-     * 
-     */
-    public void setTypKontaktu(){
-        
-    }
-}
+
+public enum TypAktywnosci {PHONE, EMAIL, PERSONALlY}
+
