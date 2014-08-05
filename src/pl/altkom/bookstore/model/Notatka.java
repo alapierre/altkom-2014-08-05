@@ -20,7 +20,7 @@ public class Notatka {
     */
     public String tytul;
     
-    public Date data;
+    //public Date data;
     
     public String trescNotatki;
     
