@@ -1,6 +1,5 @@
 package pl.altkom.bookstore.model;
 
-
 import java.util.Date;
 
 /*
@@ -8,28 +7,24 @@ import java.util.Date;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Jan Nowak <jan at nowak.org>
  */
 public class Terminarz {
-    public Date data; 
+
+    public Date data;
 
     /**
-     * 
-     * osoba pracownik
-     * osoba klient
+     *
+     * osoba pracownik osoba klient
      */
-    
-    
-    private void setTermin (Date data)
-    {
+    private void setTermin(Date data) {
         this.data = data;
     }
 
     public Date getData() {
         return data;
     }
-    
+
 }

@@ -15,21 +15,21 @@ public class IndividualClient extends Client {
 
     private Person person;
 
+    public IndividualClient(Person person) {
+        this.person = person;
+        setType(ClientType.INDIVIDUAL);
+    }
+
     public Person getPerson() {
         return person;
     }
 
     @Override
     public InvoiceInfo getInvoiceInfo() {
-        return new InvoiceInfo(person.getFirstName() 
-                + " " 
+        return new InvoiceInfo(person.getFirstName()
+                + " "
                 + person.getLastName(), 
                 String.valueOf( person.getPeselNumber()));
-    }
-    
-    public IndividualClient(Person person) {
-        this.person = person;
-        setType(ClientType.INDIVIDUAL);
     }
     
 }

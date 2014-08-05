@@ -3,20 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
 import java.util.Date;
 
 /**
  * Trader VO
- * 
+ *
  * @author Adrian Lapierre <adrian@soft-project.pl>
  */
 public class Person {
-   
+
     private String firstName;
-     
+
+    private String lastName;
+
+    private int peselNumber;
+
+    private Date dateOfBirth;
+
+    private Kontakt contact;
+
+    private Address address;
+
     public String getFirstName() {
         return firstName;
     }
@@ -25,8 +34,6 @@ public class Person {
         this.firstName = firstName;
     }
 
-    private String lastName;
-    
     public String getLastName() {
         return lastName;
     }
@@ -35,8 +42,6 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private int peselNumber;
-    
     public int getPeselNumber() {
         return peselNumber;
     }
@@ -45,8 +50,6 @@ public class Person {
         this.peselNumber = peselNumber;
     }
 
-    private Date dateOfBirth;
-    
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
@@ -54,9 +57,7 @@ public class Person {
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-    
-    private Kontakt contact;
-    
+
     public Kontakt getContact() {
         return contact;
     }
@@ -65,8 +66,6 @@ public class Person {
         this.contact = contact;
     }
 
-    private Address address;
-    
     public Address getAddress() {
         return address;
     }

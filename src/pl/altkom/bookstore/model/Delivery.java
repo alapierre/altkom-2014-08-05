@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
 import java.util.Date;
@@ -13,9 +12,10 @@ import java.util.Date;
  * @author Administrator
  */
 public class Delivery {
+
     private Date deliveryTime;
     private String deliveryMethod;
-    private  DeliveryAddress deliveryAddress;
+    private DeliveryAddress deliveryAddress;
     private double deliveyCost;
 
     public Date getDeliveryTime() {
@@ -50,7 +50,4 @@ public class Delivery {
         this.deliveyCost = deliveyCost;
     }
 
- 
-    
-    
 }

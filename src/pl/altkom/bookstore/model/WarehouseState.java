@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
 /**
@@ -11,12 +10,12 @@ package pl.altkom.bookstore.model;
  * @author Adrian Lapierre <adrian@soft-project.pl>
  */
 public class WarehouseState {
-    
+
     /**
      * Obiekt produktu na stanie magazynowym
      */
     private Product product;
-    
+
     private double volume;
 
     public WarehouseState(Product product, double volume) {
@@ -24,8 +23,6 @@ public class WarehouseState {
         this.volume = volume;
     }
 
-    
-    
     public Product getProduct() {
         return product;
     }
@@ -41,7 +38,5 @@ public class WarehouseState {
     public void setVolume(double volume) {
         this.volume = volume;
     }
-    
-    
-    
+
 }

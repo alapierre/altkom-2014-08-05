@@ -16,18 +16,6 @@ public class Warehouse {
 
     private Map<Product, WarehouseState> items = new HashMap<>();
 
-    public void addProduct(Product product, int volumne) {
-        
-        WarehouseState tmp = items.get(product);
-        
-        if(tmp == null) {
-            items.put(product, new WarehouseState(product, volumne));
-        } else {
-            tmp.setVolume(tmp.getVolume() + volumne);
-        }
-        
-    }
-    
     /**
      * Numer magazynu na ktorym znajduje sie dany produkt (umozliwia posiadanie
      * wielu magazynow)
@@ -38,6 +26,18 @@ public class Warehouse {
      * Ewentualna osoba kontaktowa dla magazynu (Pan Mgr)
      */
     private Kontakt contactPerson;
+
+    public void addProduct(Product product, int volumne) {
+
+        WarehouseState tmp = items.get(product);
+
+        if (tmp == null) {
+            items.put(product, new WarehouseState(product, volumne));
+        } else {
+            tmp.setVolume(tmp.getVolume() + volumne);
+        }
+
+    }
 
     public void setContactPerson(Kontakt contactPerson) {
         this.contactPerson = contactPerson;
