@@ -24,6 +24,10 @@ public class Warehouse {
      * Ilosc dostepnego towaru
      */
     private double number;
+    /**
+     * Ewentualna osoba kontaktowa dla magazynu (Pan Mgr)
+     */
+    private Kontakt contactPerson;
 
     public void setNumberWarehouse(int numberWarehouse) {
         this.numberWarehouse = numberWarehouse;
