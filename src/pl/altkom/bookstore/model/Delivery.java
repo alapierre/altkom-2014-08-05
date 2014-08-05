@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author Administrator
  */
-public class Adress {
+public class Delivery {
     private Date deliveryTime;
     private String deliveryMethod;
     private  DeliveryAddress deliveryAddress;
