@@ -11,7 +11,9 @@ package pl.altkom.bookstore.model;
  * @author Daniel Marczydło <your.name at your.org>
  */
 public class Warehouse {
-    //Product object
+    
+    private Product product;
+    
     //Adress object
     private int numberWarehouse;
     private double number;
