@@ -13,12 +13,17 @@ package pl.altkom.bookstore.model;
 public class DokPoz {
     
     //Towar - Index (nazwa, opis, jednostka, stawka VAT)
+    public Product productName;
+    
     private String adnotacje;
     private double iloscZam;
     //Towar - jednostka
+    public Product productUnit;
     private double cenaNetto;
     private double cenaBrutto;
     //Towar - stawka VAT
+    public Product productVat;
+    
     private double wartoscVAT;
     private double rabat;
     private String dataDostawy;
@@ -36,8 +41,10 @@ public class DokPoz {
 
     @Override
     public String toString() {
-        return "DokPoz{" + "adnotacje=" + adnotacje + ", iloscZam=" + iloscZam + ", cenaNetto=" + cenaNetto + ", cenaBrutto=" + cenaBrutto + ", wartoscVAT=" + wartoscVAT + ", rabat=" + rabat + ", dataDostawy=" + dataDostawy + '}';
+        return "DokPoz{" + "productName=" + productName + ", adnotacje=" + adnotacje + ", iloscZam=" + iloscZam + ", productUnit=" + productUnit + ", cenaNetto=" + cenaNetto + ", cenaBrutto=" + cenaBrutto + ", productVat=" + productVat + ", wartoscVAT=" + wartoscVAT + ", rabat=" + rabat + ", dataDostawy=" + dataDostawy + '}';
     }
+    
+    
 
     public String getAdnotacje() {
         return adnotacje;
