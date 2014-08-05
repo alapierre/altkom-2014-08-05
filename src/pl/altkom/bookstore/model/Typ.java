@@ -12,6 +12,10 @@ package pl.altkom.bookstore.model;
  */
 public class Typ {
     public String typKontaktu;
+    
+    /**
+     * 
+     */
     public void setTypKontaktu(){
         
     }
