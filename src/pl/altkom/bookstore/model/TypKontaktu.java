@@ -1,15 +1,15 @@
-package pl.altkom.bookstore.model;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
+package pl.altkom.bookstore.model;
+
 /**
  *
- * @author Jan Nowak <jan at nowak.org>
+ * @author Marcin Kępa <your.name at your.org>
  */
-public class Aktywnosc {
-    public enum typAktywnosci {SALE, RECLAMATION, EXCHANGE, INFORMATION}
+public enum TypKontaktu {
+    EMAIL, TELEFON, POCZTA
 }

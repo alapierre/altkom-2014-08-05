@@ -18,4 +18,12 @@ public class Notatka {
     * treść
     * kto sporządził
     */
+    public String tytul;
+    
+    //public Date data;
+    
+    public String trescNotatki;
+    
+    public String autorNotatki;
+    
 }
