@@ -6,23 +6,28 @@
 
 package pl.altkom.bookstore.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.HashMap;
+import java.util.Map;
 /**
  * Describes corporate client
  * @author Radek Kozak
  */
 public class CorporateClient extends Client {
     
-    private List<Person> persons = new ArrayList<Person>();
+    private Map<Integer, Person> persons;
     
     public void addPerson(Person p) {
-        persons.add(p);
+        
+        int pesel = p.getPeselNumber();
+        
+        if(!persons.containsKey(pesel)) {
+            persons.put(pesel, p);
+        }
     }
 
     public CorporateClient() {
         setType(ClientType.CORPORATE);
+        this.persons = new HashMap<>();
     }
     
     
@@ -36,16 +41,7 @@ public class CorporateClient extends Client {
      * @return Person 
      */
     public Person getPersonByPesel(int pesel) {
-        Person person = null;
-       
-        for (Person p: persons) {
-            if(p.getPeselNumber() == pesel) {
-                person = p;
-                break;
-            }
-        }
-        
-        return person;
+        return persons.get(pesel);
     }
     
     
