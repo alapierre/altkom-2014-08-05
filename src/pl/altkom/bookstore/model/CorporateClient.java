@@ -20,6 +20,11 @@ public class CorporateClient extends Client {
     public void addPerson(Person p) {
         persons.add(p);
     }
+
+    public CorporateClient() {
+        setType(ClientType.CORPORATE);
+    }
+    
     
     
     /**

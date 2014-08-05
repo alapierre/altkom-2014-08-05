@@ -26,6 +26,7 @@ public class IndividualClient extends Client {
     
     public IndividualClient(Person person) {
         this.person = person;
+        setType(ClientType.INDIVIDUAL);
     }
     
 }
