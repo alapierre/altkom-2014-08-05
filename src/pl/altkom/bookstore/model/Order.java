@@ -7,15 +7,26 @@
 package pl.altkom.bookstore.model;
 
 /**
- *
+ * 
  * @author Piotr Wajcowicz
  */
 public class Order {
     
+    /**
+     * Order number
+     */
     private int orderId;
     //obiekt kontrahenta
+    
+    /**
+     * An order status
+     */
     private enum orderStatus { REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE };
     //obiekt zamowionych produktów
+    
+    /**
+     * Full delivery address
+     */
     private String deliveryAddress;
 
     public int getOrderId() {
