@@ -39,6 +39,14 @@ public class Payment {
     */
     private Invoice invoice;
 
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
+    }
+
+    public Invoice getInvoice() {
+        return invoice;
+    }
+
     public void setPaymentDate(Date paymentDate) {
         this.paymentDate = paymentDate;
     }
