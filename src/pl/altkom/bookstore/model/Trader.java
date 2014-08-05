@@ -6,18 +6,11 @@
 
 package pl.altkom.bookstore.model;
 
-import java.util.Date;
-
 /**
  * Trader VO
  * 
- * @author Adrian Lapierre <adrian@soft-project.pl>
+ * @author Radek Kozak
  */
-public class Person {
-    String firstName;
-    String lastName;
-    int peselNumber;
-    Date dateOfBirth;
-    Contact contact;
-    Address address;
+public class Trader extends Person {
+    JobPosition position;
 }
