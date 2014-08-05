@@ -12,8 +12,17 @@ package pl.altkom.bookstore.model;
  */
 public class ProductCatalog {
     
+    /**
+     * Nazwa kategorii produktow
+     */
     private String name;
+    /**
+     * Ewentualny podatek nadawany na cala kategorie
+     */
     private double tax;
+    /**
+     * Znizka nadawana na cala kategorie w przypadku, gdy chcemy grupowo wprowadzac rabaty
+     */
     private double discount; 
 
     public void setName(String name) {
