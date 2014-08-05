@@ -15,4 +15,7 @@ public class Cennik {
     * produkt
     * cena netto
     */
+    
+    public Product produkt;
+ 
 }
