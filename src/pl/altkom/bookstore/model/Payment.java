@@ -34,7 +34,10 @@ public class Payment {
      * Zaleglosc, gdy pelna kwota nie zostala zrealizowana
      */
     private double arrearage;
-    // FV object 
+   /**
+    * Obiekt faktury do ktorej odnosi sie platnosc
+    */
+    private Invoice invoice;
 
     public void setPaymentDate(Date paymentDate) {
         this.paymentDate = paymentDate;
