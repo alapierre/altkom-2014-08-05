@@ -6,13 +6,43 @@
 
 package pl.altkom.bookstore.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Describes corporate client
  * @author Radek Kozak
  */
 public class CorporateClient extends Client {
     
-    private Person persons[];
+    private List<Person> persons = new ArrayList<Person>();
+    
+    public void addPerson(Person p) {
+        persons.add(p);
+    }
+    
+    
+    /**
+     * Search for given person by the pesel number
+     * 
+     * @param pesel Pesel number
+     * 
+     * @see pl.altkom.bookstore.model.Person
+     * @return Person 
+     */
+    public Person getPersonByPesel(int pesel) {
+        Person person = null;
+       
+        for (Person p: persons) {
+            if(p.getPeselNumber() == pesel) {
+                person = p;
+                break;
+            }
+        }
+        
+        return person;
+    }
+    
     
     @Override
     public InvoiceInfo getInvoiceInfo() {
