@@ -27,7 +27,10 @@ public class DokPoz {
     private String dataDostawy;
     
     
-    public void setDokPoz(Product productName, String adnotacje, double iloscZam,Product productUnit, double cenaNetto, double cenaBrutto, Product productVat, double wartoscVAT, double rabat, String dataDostawy) {
+    public void setDokPoz (Product productName, String adnotacje, double iloscZam,
+                            Product productUnit, double cenaNetto, double cenaBrutto, 
+                            Product productVat, double wartoscVAT, double rabat, String dataDostawy) {
+        
         this.productName = productName;
         this.adnotacje = adnotacje;
         this.iloscZam = iloscZam;
@@ -45,8 +48,6 @@ public class DokPoz {
         return "DokPoz{" + "productName=" + productName + ", adnotacje=" + adnotacje + ", iloscZam=" + iloscZam + ", productUnit=" + productUnit + ", cenaNetto=" + cenaNetto + ", cenaBrutto=" + cenaBrutto + ", productVat=" + productVat + ", wartoscVAT=" + wartoscVAT + ", rabat=" + rabat + ", dataDostawy=" + dataDostawy + '}';
     }
     
-    
-
     public String getAdnotacje() {
         return adnotacje;
     
