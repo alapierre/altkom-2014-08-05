@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
 /**
@@ -11,11 +10,19 @@ package pl.altkom.bookstore.model;
  * @author Daniel Marczydło <your.name at your.org>
  */
 public class Warehouse {
-    
+
+    /**
+     * Obiekt produktu na stanie magazynowym
+     */
     private Product product;
-    
-    //Adress object
+    /**
+     * Numer magazynu na ktorym znajduje sie dany produkt (umozliwia posiadanie
+     * wielu magazynow)
+     */
     private int numberWarehouse;
+    /**
+     * Ilosc dostepnego towaru
+     */
     private double number;
 
     public void setNumberWarehouse(int numberWarehouse) {
@@ -33,7 +40,5 @@ public class Warehouse {
     public double getNumber() {
         return number;
     }
-    
-    
-    
+
 }
