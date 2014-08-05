@@ -27,5 +27,39 @@ public class Notatka {
     public String trescNotatki;
     
     public String autorNotatki;
+
+    public String getTytul() {
+        return tytul;
+    }
+
+    public void setTytul(String tytul) {
+        this.tytul = tytul;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getTrescNotatki() {
+        return trescNotatki;
+    }
+
+    public void setTrescNotatki(String trescNotatki) {
+        this.trescNotatki = trescNotatki;
+    }
+
+    public String getAutorNotatki() {
+        return autorNotatki;
+    }
+
+    public void setAutorNotatki(String autorNotatki) {
+        this.autorNotatki = autorNotatki;
+    }
+    
+    
     
 }

@@ -11,14 +11,15 @@ package pl.altkom.bookstore.model;
  * @author Administrator
  */
 public class DeliveryAddress {
-    private String address;
+    
+    private Address address;
     private String deliveryPerson;
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 

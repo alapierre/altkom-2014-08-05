@@ -16,9 +16,41 @@ public class Kontakt {
     
     public String email;
     
-    public DeliveryAddress adres;
+    public Address adres;
     
     public TypKontaktu preferowanyKontakt;
+
+    public int getNumerTelefonu() {
+        return numerTelefonu;
+    }
+
+    public void setNumerTelefonu(int numerTelefonu) {
+        this.numerTelefonu = numerTelefonu;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Address getAdres() {
+        return adres;
+    }
+
+    public void setAdres(Address adres) {
+        this.adres = adres;
+    }
+
+    public TypKontaktu getPreferowanyKontakt() {
+        return preferowanyKontakt;
+    }
+
+    public void setPreferowanyKontakt(TypKontaktu preferowanyKontakt) {
+        this.preferowanyKontakt = preferowanyKontakt;
+    }
     
     
 }

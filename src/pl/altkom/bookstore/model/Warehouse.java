@@ -5,40 +5,42 @@
  */
 package pl.altkom.bookstore.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author Daniel Marczydło <your.name at your.org>
  */
 public class Warehouse {
 
-    /**
-     * Obiekt produktu na stanie magazynowym
-     */
-    private Product product;
+    private Map<Product, WarehouseState> items = new HashMap<>();
+
+    public void addProduct(Product product, int volumne) {
+        
+        WarehouseState tmp = items.get(product);
+        
+        if(tmp == null) {
+            items.put(product, new WarehouseState(product, volumne));
+        } else {
+            tmp.setVolume(tmp.getVolume() + volumne);
+        }
+        
+    }
+    
     /**
      * Numer magazynu na ktorym znajduje sie dany produkt (umozliwia posiadanie
      * wielu magazynow)
      */
     private int numberWarehouse;
-    /**
-     * Ilosc dostepnego towaru
-     */
-    private double number;
+
     /**
      * Ewentualna osoba kontaktowa dla magazynu (Pan Mgr)
      */
     private Kontakt contactPerson;
 
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
     public void setContactPerson(Kontakt contactPerson) {
         this.contactPerson = contactPerson;
-    }
-
-    public Product getProduct() {
-        return product;
     }
 
     public Kontakt getContactPerson() {
@@ -49,16 +51,8 @@ public class Warehouse {
         this.numberWarehouse = numberWarehouse;
     }
 
-    public void setNumber(double number) {
-        this.number = number;
-    }
-
     public int getNumberWarehouse() {
         return numberWarehouse;
     }
 
-    public double getNumber() {
-        return number;
-    }
- 
 }

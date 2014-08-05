@@ -11,6 +11,19 @@ package pl.altkom.bookstore.model;
  * @author Piotr Wajcowicz
  */
 public class Product {
+
+    public Product() {
+    }
+
+    public Product(int productId, String productName, double productPrice, double productVat, String productUnit) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productVat = productVat;
+        this.productUnit = productUnit;
+    }
+    
+    
     
     /**
      * Product unique ID
@@ -23,7 +36,7 @@ public class Product {
     private String productName;
     
     /**
-     * Product price
+     * Product manyufactuer price
      */
     private double productPrice;
     
@@ -33,17 +46,12 @@ public class Product {
     private double discount;
     
     /**
-     * How many of this product are available
-     */
-    private int productCount;
-    
-    /**
      * Name of the manufacturer
      */
     private String productManufacturer;
     
     /**
-     * Vat value 
+     * Vat rate 
      */
     private double productVat;
     
@@ -92,14 +100,6 @@ public class Product {
         this.discount = discount;
     }
 
-    public int getProductCount() {
-        return productCount;
-    }
-
-    public void setProductCount(int productCount) {
-        this.productCount = productCount;
-    }
-
     public String getProductManufacturer() {
         return productManufacturer;
     }
@@ -115,4 +115,31 @@ public class Product {
     public void setProductVat(double productVat) {
         this.productVat = productVat;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" + "productId=" + productId + ", productName=" + productName + ", productPrice=" + productPrice + ", discount=" + discount + ", productManufacturer=" + productManufacturer + ", productVat=" + productVat + ", productUnit=" + productUnit + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 19 * hash + this.productId;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Product other = (Product) obj;
+        return this.productId == other.productId;
+    }
+    
+    
+    
 }

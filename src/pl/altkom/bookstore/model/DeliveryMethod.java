@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
 import java.sql.Time;
+import java.time.Clock;
+import java.time.Period;
 
 /**
  *
  * @author Administrator
  */
 public class DeliveryMethod {
+
     private String deliveryType;
-    private Time deliveryTime;
-    private  String insuranceType;
+    private Period deliveryTime;
+    private String insuranceType;
     private double insuranceCost;
-    private Time deliveryHour;
+    private Clock deliveryHour;
 
     public String getDeliveryType() {
         return deliveryType;
@@ -27,12 +29,20 @@ public class DeliveryMethod {
         this.deliveryType = deliveryType;
     }
 
-    public Time getDeliveryTime() {
+    public Period getDeliveryTime() {
         return deliveryTime;
     }
 
-    public void setDeliveryTime(Time deliveryTime) {
+    public void setDeliveryTime(Period deliveryTime) {
         this.deliveryTime = deliveryTime;
+    }
+
+    public Clock getDeliveryHour() {
+        return deliveryHour;
+    }
+
+    public void setDeliveryHour(Clock deliveryHour) {
+        this.deliveryHour = deliveryHour;
     }
 
     public String getInsuranceType() {
@@ -51,12 +61,4 @@ public class DeliveryMethod {
         this.insuranceCost = insuranceCost;
     }
 
-    public Time getDeliveryHour() {
-        return deliveryHour;
-    }
-
-    public void setDeliveryHour(Time deliveryHour) {
-        this.deliveryHour = deliveryHour;
-    }
-    
 }

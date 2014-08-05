@@ -65,13 +65,13 @@ public class Person {
         this.contact = contact;
     }
 
-    private DeliveryAddress address;
+    private Address address;
     
-    public DeliveryAddress getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(DeliveryAddress address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 }

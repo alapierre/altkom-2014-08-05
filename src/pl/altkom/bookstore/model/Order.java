@@ -3,31 +3,50 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pl.altkom.bookstore.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * 
+ *
  * @author Piotr Wajcowicz
  */
 public class Order {
-    
+
+    /**
+     * An order status
+     */
+    public enum OrderStatus {
+
+        REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE
+    };
+
     /**
      * Order number
      */
     private int orderId;
     //obiekt kontrahenta
-    
-    /**
-     * An order status
-     */
-    private enum orderStatus { REALIZACJA, GOTOWE, PLATNOSC, WYSLANE, ZAKONCZONE };
-    
+
+    private OrderStatus status;
+
+    public OrderStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(OrderStatus status) {
+        this.status = status;
+    }
+
+    public void addProduct(Product product, int volume) {
+
+    }
+
     /**
      * List of ordered products
      */
-    private Product[] orderedProducts;
-    
+    private List<DocItem> orderedProducts = new ArrayList<>();
+
     /**
      * Full delivery address
      */
@@ -48,7 +67,5 @@ public class Order {
     public void setDeliveryAddress(String deliveryAddress) {
         this.deliveryAddress = deliveryAddress;
     }
-    
-    
-            
+
 }

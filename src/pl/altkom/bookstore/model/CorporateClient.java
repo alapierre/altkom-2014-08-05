@@ -14,6 +14,9 @@ import java.util.Map;
  */
 public class CorporateClient extends Client {
     
+    private String name;
+    private String vatId;
+    
     private Map<Integer, Person> persons;
     
     public void addPerson(Person p) {
@@ -29,7 +32,22 @@ public class CorporateClient extends Client {
         setType(ClientType.CORPORATE);
         this.persons = new HashMap<>();
     }
-    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getVatId() {
+        return vatId;
+    }
+
+    public void setVatId(String vatId) {
+        this.vatId = vatId;
+    }
     
     
     /**
@@ -47,7 +65,7 @@ public class CorporateClient extends Client {
     
     @Override
     public InvoiceInfo getInvoiceInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return new InvoiceInfo(name, vatId);
     }
     
 }

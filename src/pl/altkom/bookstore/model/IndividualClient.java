@@ -21,7 +21,10 @@ public class IndividualClient extends Client {
 
     @Override
     public InvoiceInfo getInvoiceInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return new InvoiceInfo(person.getFirstName() 
+                + " " 
+                + person.getLastName(), 
+                String.valueOf( person.getPeselNumber()));
     }
     
     public IndividualClient(Person person) {

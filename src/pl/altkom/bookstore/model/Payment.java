@@ -25,7 +25,7 @@ public class Payment {
     /**
      * Status platnosci jesli false - platnosc nie zostala zrealizowana
      */
-    private boolean status;
+    private boolean payed;
     /**
      * Kwota platnosci 
      */
@@ -55,9 +55,7 @@ public class Payment {
         this.paymentTerm = paymentTerm;
     }
 
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
+    
 
     public void setPrice(double price) {
         this.price = price;
@@ -75,9 +73,15 @@ public class Payment {
         return paymentTerm;
     }
 
-    public boolean isStatus() {
-        return status;
+    public boolean isPayed() {
+        return payed;
     }
+
+    public void setPayed(boolean payed) {
+        this.payed = payed;
+    }
+
+    
 
     public double getPrice() {
         return price;
