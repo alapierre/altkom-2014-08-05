@@ -14,10 +14,25 @@ import java.util.Date;
  * @author Daniel Marczydło <your.name at your.org>
  */
 public class Payment {
+    /**
+     * Data platnosci jako Date
+     */
     private Date paymentDate;
+    /**
+     * Termin platnosci jako Date
+     */
     private Date paymentTerm;
+    /**
+     * Status platnosci jesli false - platnosc nie zostala zrealizowana
+     */
     private boolean status;
+    /**
+     * Kwota platnosci 
+     */
     private double price;
+    /**
+     * Zaleglosc, gdy pelna kwota nie zostala zrealizowana
+     */
     private double arrearage;
     // FV object 
 
