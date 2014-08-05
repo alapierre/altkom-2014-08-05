@@ -13,15 +13,15 @@ package pl.altkom.bookstore.model;
 public class DokPoz {
     
     //Towar - Index (nazwa, opis, jednostka, stawka VAT)
-    public Product productName;
+    private Product productName;
     private String adnotacje;
     private double iloscZam;
     //Towar - jednostka
-    public Product productUnit;
+    private Product productUnit;
     private double cenaNetto;
     private double cenaBrutto;
     //Towar - stawka VAT
-    public Product productVat;
+    private Product productVat;
     private double wartoscVAT;
     private double rabat;
     private String dataDostawy;

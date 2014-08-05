@@ -11,10 +11,14 @@ package pl.altkom.bookstore.model;
  * @author Marcin Kępa <your.name at your.org>
  */
 public class Kontakt {
-   /*
-    * numer telefonu
-    * adres email
-    * adres
-    * preferowany kontakt
-    */
+   
+    public int numerTelefonu;
+    
+    public String email;
+    
+    public DeliveryAddress adres;
+    
+    public TypKontaktu preferowanyKontakt;
+    
+    
 }
