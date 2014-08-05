@@ -6,6 +6,8 @@
 
 package pl.altkom.bookstore.model;
 
+import java.util.Date;
+
 /**
  *
  * @author Marcin Kępa <your.name at your.org>
@@ -20,7 +22,7 @@ public class Notatka {
     */
     public String tytul;
     
-    //public Date data;
+    public Date data;
     
     public String trescNotatki;
     
