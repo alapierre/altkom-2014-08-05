@@ -10,15 +10,6 @@ package pl.altkom.bookstore.model;
  *
  * @author Marcin Kępa <your.name at your.org>
  */
-public class Kontakt {
-   
-    public int numerTelefonu;
-    
-    public String email;
-    
-    public Adress adres;
-    
-    public TypKontaktu preferowanyKontakt;
-    
-    
+public enum TypKontaktu {
+    EMAIL, TELEFON, POCZTA
 }
